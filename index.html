@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="to-do-list">
+        <h2>
+          To-Do-List
+          <img src="./images/icon.png" alt="todo" />
+        </h2>
+        <div class="row">
+            <input class="searchbar" type="text" placeholder="Add your text" name="searchbar" id="searchBar"/>
+            <button onclick="addNote()" class="search-btn">
+                Add
+            </button>
+        </div>
+        <p class="error-message" id="error-message"> you must write something</p>
+
+        <ul id="list-container">
+        </ul>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
